@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>apps.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Euromillions Generator</Title>
+    <Copyright>Alexandre Simões</Copyright>
+    <PackageIcon>apps.png</PackageIcon>
+    <FileVersion>1.0</FileVersion>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <StartupObject>Euromillions_Generator_APP.Program</StartupObject>
+    <Authors>Alexandre Simoes</Authors>
+    <Description>A app for generate random euromillions keys to fulfill the boletim in real scenario.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="apps.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="apps.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
