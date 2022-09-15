@@ -35,6 +35,7 @@
             this.Numbers = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.clr_button = new System.Windows.Forms.Button();
+            this.expButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gen_btn
@@ -43,7 +44,7 @@
             this.gen_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gen_btn.Location = new System.Drawing.Point(12, 122);
             this.gen_btn.Name = "gen_btn";
-            this.gen_btn.Size = new System.Drawing.Size(152, 32);
+            this.gen_btn.Size = new System.Drawing.Size(83, 32);
             this.gen_btn.TabIndex = 0;
             this.gen_btn.Text = "Generate";
             this.gen_btn.UseVisualStyleBackColor = false;
@@ -93,19 +94,32 @@
             // 
             this.clr_button.BackColor = System.Drawing.Color.LightGray;
             this.clr_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clr_button.Location = new System.Drawing.Point(209, 127);
+            this.clr_button.Location = new System.Drawing.Point(117, 122);
             this.clr_button.Name = "clr_button";
-            this.clr_button.Size = new System.Drawing.Size(75, 23);
+            this.clr_button.Size = new System.Drawing.Size(75, 32);
             this.clr_button.TabIndex = 5;
             this.clr_button.Text = "Clear All";
             this.clr_button.UseVisualStyleBackColor = false;
             this.clr_button.Click += new System.EventHandler(this.clr_button_Click);
+            // 
+            // expButton
+            // 
+            this.expButton.BackColor = System.Drawing.Color.LightGray;
+            this.expButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.expButton.Location = new System.Drawing.Point(209, 122);
+            this.expButton.Name = "expButton";
+            this.expButton.Size = new System.Drawing.Size(75, 32);
+            this.expButton.TabIndex = 6;
+            this.expButton.Text = "Export";
+            this.expButton.UseVisualStyleBackColor = false;
+            this.expButton.Click += new System.EventHandler(this.expButton_Click);
             // 
             // GeneratorAPP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 166);
+            this.Controls.Add(this.expButton);
             this.Controls.Add(this.clr_button);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Numbers);
@@ -129,5 +143,6 @@
         private Label Numbers;
         private Label label1;
         private Button clr_button;
+        private Button expButton;
     }
 }
